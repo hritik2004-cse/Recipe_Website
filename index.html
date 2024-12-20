@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Nation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a9da22d09f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- hero section starts here -->
+    <header id="home">
+      <!-- navigation bar -->
+      <nav class="flex-jcse">
+        <!-- logo -->
+        <div class="header-div flex pointer">
+          <img src="images/logoes/logo.png" alt="logo" />
+          <h1 class="capital">recipe<span class="col-2">Nation</span></h1>
+        </div>
+        <!-- navigation -->
+        <ul class="nav-list">
+          <li><a href="#home" class="capital">home</a></li>
+          <li><a href="#recipe" class="capital">recipe</a></li>
+          <li><a href="#addRecipe" class="capital">add recipe</a></li>
+          <li><a href="#blog" class="capital">blog</a></li>
+          <li><a href="aboutUs" class="capital">about us</a></li>
+        </ul>
+        <!-- menu bar -->
+        <div class="menu-bar">
+          <div class="menu-lines"></div>
+          <div class="menu-lines"></div>
+          <div class="menu-lines"></div>
+        </div>
+        <!-- buttons -->
+        <div class="head-btn-div">
+          <button class="btn-1 pointer" onclick="loginError()">login</button>
+          <button class="btn-2 pointer" onclick="signupError()">sign up</button>
+        </div>
+      </nav>
+      <div class="main-content flex-jcse">
+        <div class="main-content-part-1">
+          <div class="h2-div">
+            <h2 class="capital">your daily dish</h2>
+            <h2 class="capital">a <span class="col-2">food</span> journey</h2>
+          </div>
+          <p class="main-content-p">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laboriosam, dolore maxime officia veniam est aperiam officiis.
+          </p>
+          <button class="main-btn pointer" onclick="signupError()">
+            sign up
+          </button>
+          <p class="a-p capital">
+            do you have account?<a href="#" class="col-2" onclick="loginError()"
+              >log in</a
+            >
+          </p>
+        </div>
+        <div class="main-content-part-2 flex">
+          <img src="images/main-bg-and-img/main-img.png" alt="content" />
+        </div>
+      </div>
+    </header>
+    <!-- hero section ends here -->
+    <hr />
+    <!-- recipe sharing section starts here -->
+    <section id="addRecipe" class="section-sharing flex-jcse">
+      <div class="section-1 flex">
+        <img
+          src="images/main-bg-and-img/post recipie.png"
+          alt="share your recipe"
+        />
+      </div>
+      <div class="section-2 flex">
+        <h2 class="capital">share your <span class="col-2">recipes</span></h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad id quia
+          cum? Modi consectetur nam voluptas, id et hic quisquam facere
+          reiciendis.
+        </p>
+        <!-- button -->
+        <button class="main-btn capital pointer">create new recipe</button>
+      </div>
+    </section>
+    <!-- recipe sharing section ends here -->
+    <hr />
+    <!-- trending recipe section starts here -->
+    <section class="section-trend-recipe">
+      <div class="flex-jcsb trending">
+        <h2 class="capital pointer">trending recipe</h2>
+        <a href="#" class="capital pointer">view more</a>
+      </div>
+      <!-- card division -->
+      <div class="flex-jcse card-div">
+        <!-- card div 1 -->
+        <div class="div-1 flex-jcsb">
+          <!-- card 1 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/trending recipe img/onion rings img.webp"
+                alt="onion rings"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">onion rings</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 325 cal
+                </button>
+              </div>
+              <p>
+                Onion rings are a popular snack or side dish made by coating
+                onion slices in batter or breadcrumbs and deep-frying them ...
+                <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/human images/human img 1.webp"
+                      alt="human 1"
+                    />
+                    <h2 class="cst-name capital">shena</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/trending recipe img/vada-pav-img.webp"
+                alt="vada pav"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">vada pav</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 350 cal
+                </button>
+              </div>
+              <p>
+                Vada Pav is a popular Indian street food from Mumbai, consisting
+                of a spicy potato fritter (vada) sandwiched in a bun ...
+                <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/human images/human img 2.webp"
+                      alt="human 2"
+                    />
+                    <h2 class="cst-name capital">amit</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/trending recipe img/pizza-img.webp"
+                alt="italian pizza"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">italian pizza</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 800 cal
+                </button>
+              </div>
+              <p>
+                Italian pizza, a globally beloved dish, features a thin, crisp
+                crust topped with fresh tomatoes, mozzarella cheese, and a
+                variety ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/human images/human img 3.webp"
+                      alt="human 3"
+                    />
+                    <h2 class="cst-name capital">lily</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card div 2 -->
+        <div class="div-2 flex-jcse">
+          <!-- card 4 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/trending recipe img/Mediterranean-Wraps.webp"
+                alt="Mediterranean-Wraps"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">Mediterranean wraps</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 300 cal
+                </button>
+              </div>
+              <p>
+                Mediterranean wraps are flavorful, healthy wraps filled with
+                ingredients like grilled meats, fresh vegetables, hummus, and
+                tzatziki ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/human images/human img 4.webp"
+                      alt="human 4"
+                    />
+                    <h2 class="cst-name capital">mark</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cars 5 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/trending recipe img/blue berry smoothe.webp"
+                alt="blueberry smoothie"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">blueberry smoothie</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 150 cal
+                </button>
+              </div>
+              <p>
+                A blueberry smoothie is a refreshing and nutritious blend of
+                blueberries, yogurt, and other ingredients, offering a delicious
+                ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/human images/human img 5.webp"
+                      alt="human 5"
+                    />
+                    <h2 class="cst-name capital">alexa</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/trending recipe img/pancake img.webp"
+                alt="pancakes"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">pancakes</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 150 cal
+                </button>
+              </div>
+              <p>
+                Pancakes are soft, fluffy cakes made from a batter of flour,
+                eggs, and milk, often served with syrup, butter, or fruit for a
+                delicious ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/human images/human img 6.webp"
+                      alt="human 6"
+                    />
+                    <h2 class="cst-name capital">andrew</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- trending recipe section ends here -->
+    <hr />
+    <!-- blog section starts here -->
+    <section class="section-blog" id="blog">
+      <div class="blog-div-1 capital flex-jcsb">
+        <h2 class="pointer">blog</h2>
+        <a href="#" class="pointer">view more</a>
+      </div>
+      <div class="blog-div-2 flex-jcse">
+        <div class="blog-card-div pointer">
+          <img src="images/blog img/sec-3-1.webp" alt="blog image 1" />
+          <div class="inner-blog-div">
+            <h2 class="capital center col-2">
+              unlock the benefits of intermittent fasting for
+            </h2>
+            <p class="capital center col-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In ipsum
+              dolorum optio et repellendus atque sint .....
+            </p>
+          </div>
+        </div>
+        <div class="blog-card-div pointer">
+          <img src="images/blog img/sec-3-2.webp" alt="blog image 2" />
+          <div class="inner-blog-div">
+            <h2 class="capital center col-2">
+              the impact of sugar consumption on your health
+            </h2>
+            <p class="capital center col-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus, blanditiis quae unde accusantium .....
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog section ends here -->
+    <hr />
+    <!-- explore recipe section starts here -->
+    <section class="section-explore-recipe">
+      <div class="flex-jcsb trending">
+        <h2 class="capital pointer">exploring recipes</h2>
+        <a href="#" class="capital pointer">view more</a>
+      </div>
+      <!-- card division -->
+      <div class="flex-jcse card-div">
+        <!-- card div 1 -->
+        <div class="div-1 flex-jcsb">
+          <!-- card 1 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/explore recipe img/dal makhani.webp"
+                alt="dal makhani"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">dal makhani</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 200 cal
+                </button>
+                <img src="images/hallmark/veg.webp" alt="veg" />
+              </div>
+              <p>
+                Dal Makhani is a rich and creamy North Indian dish made from
+                slow-cooked black lentils and kidney beans, flavored with aro
+                ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img src="images/flags/ind-flag.webp" alt="indian flag" />
+                    <h2 class="cst-name capital">india</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/explore recipe img/farro salad.webp"
+                alt="farro salad"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">farro salad</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 250 cal
+                </button>
+                <img src="images/hallmark/veg.webp" alt="veg" />
+              </div>
+              <p>
+                Farro salad is a nutritious and flavorful dish made with cooked
+                farro grain, mixed with fresh vegetables, herbs, and a light dre
+                ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img src="images/flags/italy-flag.webp" alt="italy flag" />
+                    <h2 class="cst-name capital">italy</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/explore recipe img/paneer chilli.webp"
+                alt="paneer chilli"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">paneer chilli</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 200 cal
+                </button>
+                <img src="images/hallmark/veg.webp" alt="veg" />
+              </div>
+              <p>
+                Paneer Chilli is a delicious Indo-Chinese dish featuring crispy
+                paneer cubes tossed in a flavorful blend of spicy, tangy...
+                <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/flags/ind-flag.webp"
+                      alt="indian flag"
+                    />
+                    <h2 class="cst-name capital">lily</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card div 2 -->
+        <div class="div-2 flex-jcse">
+          <!-- card 4 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/explore recipe img/pasta-img.webp"
+                alt="italian pasta"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">italian pasta</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 345 cal
+                </button>
+                <img src="images/hallmark/veg.webp" alt="veg" />
+              </div>
+              <p>
+                Italian pasta is a versatile dish made from durum wheat flour,
+                often paired with a variety of sauces like marinara, pesto, or
+                ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img src="images/flags/italy-flag.webp" alt="italy flag" />
+                    <h2 class="cst-name capital">italy</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- cars 5 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/explore recipe img/vegetable burrito img.webp"
+                alt="vegetable burrito"
+                title="vegetarian"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">vegetable burrito</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 300 cal
+                </button>
+                <img src="images/hallmark/veg.webp" alt="veg" />
+              </div>
+              <p>
+                A vegetable burrito is a wholesome wrap filled with a mix of
+                sautéed vegetables, beans, rice, and seasonings, all wrapped in
+                a ... <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img
+                      src="images/flags/maxico-flag.webp"
+                      alt="maxico flag"
+                    />
+                    <h2 class="cst-name capital">maxico</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="card pointer">
+            <div class="card-div-1">
+              <img
+                src="images/explore recipe img/vegetarian khow.webp"
+                alt="vegetarian khow"
+              />
+              <button class="save-btn">
+                <i class="fa-solid fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="card-div-part-2">
+              <div class="card-div-2 flex-jcse">
+                <h2 class="name capital">vegetarian khow</h2>
+                <button class="cal pointer capital">
+                  <i class="fa-solid fa-fire"></i> 250 cal
+                </button>
+                <img src="images/hallmark/veg.webp" alt="veg" />
+              </div>
+              <p>
+                Vegetarian Khow is a flavorful dish made with stir-fried
+                noodles, mixed vegetables, and aromatic spices, commonly ...
+                <a href="#">read more</a>
+              </p>
+              <div class="card-div-3 flex">
+                <div class="card-div-part flex-jcsb">
+                  <div class="card-div-3-1 flex">
+                    <img src="images/flags/ind-flag.webp" alt="indian flag" />
+                    <h2 class="cst-name capital">india</h2>
+                  </div>
+                  <div class="card-div-3-2">
+                    <span class="star-rating flex">
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star col-2"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- explore recipe section ends here -->
+    <hr />
+    <!-- news letter section starts here -->
+    <section class="section-newsletter flex-jcse">
+      <div class="ls-div flex-jcse">
+        <h2 class="capital">let's stay in touch!</h2>
+        <p class="capital center">
+          join our newsletter, so that we reach out to you with our news and
+          offers.
+        </p>
+        <form class="flex">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="enter your email"
+            required
+          />
+          <button class="capital pointer" onclick="subscribeError()">
+            subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- news letter section ends here -->
+    <hr />
+    <!-- popular catagories section starts here -->
+    <section class="section-popular-catagories">
+      <div class="flex-jcsb trending">
+        <h2 class="capital pointer">popular catagories</h2>
+        <a href="#" class="capital pointer">view more</a>
+      </div>
+      <div class="popular-items-div flex">
+        <div class="popular-part flex-jcse">
+          <div class="popular-item flex pointer">
+            <img
+              src="images/catagories img/breakfast img.webp"
+              alt="breakfast"
+            />
+            <h2 class="capital">breakfast</h2>
+          </div>
+          <div class="popular-item flex pointer">
+            <img src="images/catagories img/lunch img.webp" alt="lunch" />
+            <h2 class="capital">lunch</h2>
+          </div>
+          <div class="popular-item flex pointer">
+            <img src="images/catagories img/dinner img.webp" alt="dinner" />
+            <h2 class="capital">dinner</h2>
+          </div>
+          <div class="popular-item flex pointer">
+            <img src="images/catagories img/pasta img.webp" alt="pasta" />
+            <h2 class="capital">pasta</h2>
+          </div>
+        </div>
+        <div class="popular-part flex-jcse">
+          <div class="popular-item flex pointer">
+            <img
+              src="images/catagories img/appetizers img.webp"
+              alt="appetizers"
+            />
+            <h2 class="capital">appetizers</h2>
+          </div>
+          <div class="popular-item flex pointer">
+            <img src="images/catagories img/salad-img.webp" alt="salad" />
+            <h2 class="capital">salad</h2>
+          </div>
+          <div class="popular-item flex pointer">
+            <img src="images/catagories img/pizza-img-2.webp" alt="pizza" />
+            <h2 class="capital">pizza</h2>
+          </div>
+          <div class="popular-item flex pointer">
+            <img src="images/catagories img/smoothie-img.webp" alt="smoothie" />
+            <h2 class="capital">smoothie</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- popular categories section ends here -->
+    <hr />
+    <!-- our partners section starts here -->
+    <section class="section-partners flex-jcse">
+      <h2 class="capital pointer center">our partners</h2>
+      <div class="partners-main-div flex-jcse">
+        <img src="images/logoes/7-Eleven-logo.jpg" alt="7 eleven logo" />
+        <img src="images/logoes/amazon-logo.png" alt="amazon logo" />
+        <img src="images/logoes/google-logo.png" alt="google logo" />
+        <img src="images/logoes/nestle logo.png" alt="nestle logo" />
+      </div>
+    </section>
+    <!-- our partners section ends here -->
+    <hr />
+    <!-- footer starts here -->
+    <footer>
+      <div class="footer-main-div flex-jcse">
+        <div class="footer-contents flex-jcse">
+          <div class="footer-logo flex">
+            <img src="images/logoes/logo.png" alt="my logo" />
+            <h2 class="capital">recipe<span class="col-2">Nation</span></h2>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            quibusdam nam vero delectus natus dolorum iste veniam iure veritatis
+            quo doloribus .
+          </p>
+        </div>
+        <table class="footer-contents-1 flex capital">
+          <tr>
+            <th class="helping">quick links</th>
+            <th class="helping">quick links</th>
+            <th class="helping">legal</th>
+          </tr>
+          <tr>
+            <td><a href="#home" class="links">home</a></td>
+            <td><a href="#shareRecipe" class="links">share recipe</a></td>
+            <td><a href="" class="links">terms of use</a></td>
+          </tr>
+          <tr>
+            <td><a href="" class="links">recipe</a></td>
+            <td><a href="" class="links">about us</a></td>
+            <td><a href="" class="links">privacy& cookies</a></td>
+          </tr>
+          <tr>
+            <td><a href="#blog" class="links">blog</a></td>
+            <td><a href="" class="links">contact</a></td>
+          </tr>
+        </table>
+        <div class="footer-contents flex-jcse">
+          <h2 class="capital">newsletter</h2>
+          <p>Subscribe to our newsletter to get more free tip.</p>
+          <input type="email" placeholder="enter your email" />
+          <button onclick="subscribeError()" class="capital pointer">
+            subscribe
+          </button>
+        </div>
+      </div>
+      <div class="hr-div">
+        <hr class="footer-hr" />
+      </div>
+      <div class="footer-main-div-2 flex-jcsb">
+        <div class="footer-div flex-jcse capital">
+          <p>&copy 2024 recipe logo. all rights reserved</p>
+        </div>
+        <div class="footer-contents flex-jcse"></div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+    <script src="script.js"></script>
+  </body>
+</html>
