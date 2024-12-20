@@ -58,7 +58,7 @@ Recipe Nation is a beautifully designed front-end recipe website that offers a s
 2. Open the `index.html` file in a web browser.
 
 ## Project Preview 🔗
-![Preview of Recipe Nation](path/to/screenshot.png)  
+![Preview of Recipe Nation](https://github.com/hritik2004-cse/Recipe_Website/blob/main/images/main-bg-and-img/cover-img.png)  
 
 ## Future Enhancements 🚀
 - Add dynamic content fetching using APIs.
